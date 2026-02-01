@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FormData USage</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  background:linear-gradient(90deg, #ddd , #ec3939);
+
+     
+    }
+
+    .form-box{
+      background:black;
+      padding:30px;
+      width:320px;
+      border-radius:18px;
+      box-shadow:20px 25px 30px red;
+    }
+
+    .form-box h1{
+      text-align:center;
+      margin-bottom:20px;
+      font-size:22px;
+      color:#333;
+    }
+
+    .form-box h1 span{
+      color:#6366f1;
+    }
+
+    input{
+      width:100%;
+      padding:12px;
+      margin-bottom:12px;
+      border-radius:10px;
+      border:1px solid #ddd;
+      outline:none;
+    }
+
+    input:focus{
+      border-color:#6366f1;
+    }
+
+    button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(135deg, #000000, #dc2626);
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(220,38,38,0.6);
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="form-box">
+    <h1>Simple <span>FormData</span> Form ✨</h1>
+
+    <form action="#" method="get" id="myForm">
+      <input type="text" name="username" placeholder="Enter your name" required>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="file" name="profile">
+      <button type="submit">Submit Form </button>
+    </form>
+  </div>
+
+  <script src="./custom form.js"></script>
+</body>
+</html>
